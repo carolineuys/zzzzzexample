@@ -67,7 +67,7 @@ Workflow for preparing design:
 Workflow for the CNC Machine:
   Setting up the PCB board:
 1. Orient the PCB board so that its bottom left corner is pressed flush against the metal blocks
-2. Then put the metal bars with screws in the middle over the edge of the PCB board so that the little ledge on the metal bar is pressing down on the PCB board when you tighten the screws
+2. Then put the jigs over the edge of the PCB board so that the little ledge on the jig is pressing down on the PCB board when you tighten the screws
   Setting up Cavera Controller:
 1. Check project file is .mkc in order to open in Makeracam
 2. In order to open in Cavera Controller the file format must be gcode.nc format
@@ -93,7 +93,7 @@ Workflow for the CNC Machine:
 16. Hit run
 
 Setback today:
-We were given the wrong dimensions when creating the original design, so we had to recalculate the gcode for the design before milling. To do this we opened the design in Makeracam and changed the dimensions there. The correct dimensions were supposed to be 127.0mm x 101.0mm x 1.7mm. Another setback we had was that the software was confused because there was a bit that it was not expecting to be there after restarting due to the dimensions being wrong so when we hit “run” an error message popped up that the machine was locked.
+We were given the wrong dimensions when creating the original design, so we had to recalculate the gcode for the design before milling. To do this we opened the design in Makeracam and changed the dimensions there. The correct dimensions were supposed to be 127.0mm x 101.0mm x 1.7mm. After fixing the dimensions we just recalculated the gcode so that the toolpaths would direct the machine to mill in the correct places. Another setback we had was that the software was confused because there was a bit that it was not expecting to be there after restarting due to the dimensions being wrong so when we hit “run” an error message popped up that the machine was locked.
 
 Image of milled PCB board:
 <img width="3264" height="2448" alt="IMG_1292" src="https://github.com/user-attachments/assets/38b8cc5b-e343-49dd-9ac0-5f37e078fa8e" />
