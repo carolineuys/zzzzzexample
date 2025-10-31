@@ -11,6 +11,59 @@ tags:
 Setting up the toolpath:
 Before milling, you must create a tool path for the PCB board in MakeraCam so that the CNC machine will know what path to take while milling. This process started with uploading the design into MakeraCam and selecting the area that would be used for a 2D pocket toolpath which is when the CNC machine only takes off a layer (in this case it was 0.05mm deep) of the copper rather than cutting all the way through. The purpose of the pocket is to ensure that there is only copper for current to flow through in the areas where the electronics will be soldered on. The 0.8mm corn and 0.2mm 30º engraving bits were used for the 2D pocket. Next, I selected all of the holes that would be for the 2D drilling toolpath which means the bit chosen (in this case it was the 0.8mm corn) will just drill a hole straight through the board (1.7mm deep). Lastly, I selected the outer edge of the design for the 2D contour cut which is a straight line cut all the way through the board (1.7mm deep). For this I also used to 0.8mm corn bit and I added tabs to the path so that the PCB board would not fall down after being cut all the way around. Something I had to keep in mind throughout this entire process was that there was a design flaw with the outer edge - there were two lines very close together that was tricky to see, so I always had to make sure I only had the inner edge selected. Any files that I used and created during this process can be found under the "PCB project files folder"
 
+Workflow for preparing design:
+1. Open new 3D project
+2. Set material to PCB: Edit→Material→PCB
+3. Set dimensions
+    a. X = 127mm
+    b. Y = 101mm
+    c. Z = 1.7mm
+4. Download files from Fab drive: (blue folder named Dubick)
+    a. Resistance1-F_Cu.gbr
+    b. Resistance1-PTH.drl
+    c. Resistance1-Edge_Cuts.gbr
+5. Import each of these files in MakeraCAM:
+    a. File→Import PCB→Downloads→Resistance1-Edge_Cuts.gbr→Open
+    b. File→Import PCB→Downloads→Resistance1-PTH.drl→Open
+    c. File→Import PCB→Downloads→Resistance1-F_Cu.gbr→Open
+6. Anchor lower left corner:
+    a. Select whole design (highlight over everything)
+    b. Click “m” key
+    c. Select lower left corner in “Anchor” diagram at the top of new pop up (in top right corner of screen)
+    d. Under “Location” in pop up, set X to 6 and Y to 6 (offsets design from very edge of material)
+    e. Design should have moved to align with axes given
+7. Path:
+    a. Under “2D Layers” menu, hide (eye with red cross through):
+        i. Resistance1-F_Cu.gbr_pad
+        ii. Resistance1-PTH.drl_0.900 mm
+        iii. Resistance1-PTH.drl_1.400 mm
+    b. Select 2D Path (in tool bar)→2D Pocket
+    c. Select whole (visible) design
+    d. Set “End Depth” to .05mm
+    e. Add tool x2
+        i. 8mm Corn
+        ii. 0.2mm*30Engraving(Metal)
+    f. Calculate
+8. Drilling holes:
+    a. 2D Path→2D drilling
+    b. Under “2D Layers” menu, hide (eye with red cross through) all but file with holes to drill (
+    c. End Depth: 1.7mm
+    d. Add tool: 8mm Corn
+    e. Calculate
+9. Outside cut:
+    a. 2D Path→2D Contour
+    b. Under “2D Layers” menu, hide (eye with red cross through) all but file with outside cut (Resistance1-Edge_Cuts.gbr)
+    c. End Depth: 1.7mm
+    d. Strategy: Outside
+    e. Tabs: Custom
+        i. Tab Shape: Triangle
+        ii. Select “Add”
+        iii. Click 3 places on outer edge (spaced fairly evenly apart)
+    f. Add tool: 8mm Corn
+    g. Calculate
+10. Path→Export→Export OR if you want to edit file on milling machine’s computer, File→Save As, save file in downloads with .mkc format (file-type)
+11. Upload file to your folder in Fab google drive
+
 Workflow for the CNC Machine:
   Setting up the PCB board:
 1. Orient the PCB board so that its bottom left corner is pressed flush against the metal blocks
