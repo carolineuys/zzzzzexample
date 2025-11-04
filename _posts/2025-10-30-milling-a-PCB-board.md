@@ -8,10 +8,10 @@ tags:
   - update
 ---
 
-Setting up the toolpath:
+## Setting up the toolpath:
 Before milling, you must create a tool path for the PCB board in MakeraCam so that the CNC machine will know what path to take while milling. This process started with uploading the design into MakeraCam and selecting the area that would be used for a 2D pocket toolpath which is when the CNC machine only takes off a layer (in this case it was 0.05mm deep) of the copper rather than cutting all the way through. The purpose of the pocket is to ensure that there is only copper for current to flow through in the areas where the electronics will be soldered on. The 0.8mm corn and 0.2mm 30º engraving bits were used for the 2D pocket. Next, I selected all of the holes that would be for the 2D drilling toolpath which means the bit chosen (in this case it was the 0.8mm corn) will just drill a hole straight through the board (1.7mm deep). Lastly, I selected the outer edge of the design for the 2D contour cut which is a straight line cut all the way through the board (1.7mm deep). For this I also used to 0.8mm corn bit and I added tabs to the path so that the PCB board would not fall down after being cut all the way around. Something I had to keep in mind throughout this entire process was that there was a design flaw with the outer edge - there were two lines very close together that was tricky to see, so I always had to make sure I only had the inner edge selected. Any files that I used and created during this process can be found under the "PCB project files folder" linked here: https://github.com/carolineuys/Caroline-Uys-Portfolio/tree/master/PCB%20Board%20Files
 
-Workflow for preparing design:
+## Workflow for preparing design:
 1. Open new 3D project
 2. Set material to PCB: Edit→Material→PCB
 3. Set dimensions
@@ -64,7 +64,7 @@ Workflow for preparing design:
 10. Path→Export→Export OR if you want to edit file on milling machine’s computer, File→Save As, save file in downloads with .mkc format (file-type)
 11. Upload file to your folder in Fab google drive
 
-Workflow for the CNC Machine:
+## Workflow for the CNC Machine:
   Setting up the PCB board:
 1. Orient the PCB board so that its bottom left corner is pressed flush against the metal blocks
 2. Then put the jigs over the edge of the PCB board so that the little ledge on the jig is pressing down on the PCB board when you tighten the screws
@@ -92,8 +92,8 @@ Workflow for the CNC Machine:
 15. Then click origin 
 16. Hit run
 
-Setback today:
+## Setback today:
 We were given the wrong dimensions when creating the original design, so we had to recalculate the gcode for the design before milling. To do this we opened the design in Makeracam and changed the dimensions there. The correct dimensions were supposed to be 127.0mm x 101.0mm x 1.7mm. After fixing the dimensions we just recalculated the gcode so that the toolpaths would direct the machine to mill in the correct places. Another setback we had was that the software was confused because there was a bit that it was not expecting to be there after restarting due to the dimensions being wrong so when we hit “run” an error message popped up that the machine was locked. We had to have Mr. B help us fix this.
 
-Image of milled PCB board:
+## Image of milled PCB board:
 <img width="3264" height="2448" alt="IMG_1292" src="https://github.com/user-attachments/assets/38b8cc5b-e343-49dd-9ac0-5f37e078fa8e" />
