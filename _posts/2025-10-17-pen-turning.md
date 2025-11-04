@@ -1,4 +1,4 @@
-<img width="3264" height="2448" alt="IMG_1209 (1)" src="https://github.com/user-attachments/assets/8ac5ce3f-63c6-45dc-90ad-e28591c1084e" />---
+---
 title: "Pen Turning"
 date: 2025-20-17 10:36:00 -0400
 categories: 
