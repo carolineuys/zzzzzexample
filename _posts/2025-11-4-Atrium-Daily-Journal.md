@@ -24,12 +24,9 @@ In the email I described our progress with the donning tubes and quad sticks as 
 11/05
 Scarlett and I assembled the parts of the mount that we had previously printed out and had to reprint. While assembling, we realized that some of the parts were not working/fitting into the rest of the pieces so we are reprinting just those parts that weren’t working and will assemble them when they are ready.
 This is how far we got today in our assembly of the mount:
-C:\Users\engineering\Documents\GitHub\zzzzzexample\assets\images\IMG_2385.jpg
-C:\Users\engineering\Documents\GitHub\zzzzzexample\assets\images\IMG_2387.jpg
-C:\Users\engineering\Documents\GitHub\zzzzzexample\assets\images\IMG_2388.jpg
-C:\Users\engineering\Documents\GitHub\zzzzzexample\assets\images\IMG_2389.jpg
+
 There were also a few pieces that we did not end up using because the print had not finished so the pieces were incomplete:
-C:\Users\engineering\Documents\GitHub\zzzzzexample\assets\images\IMG_2390.jpg
+
 
 11/07
 I finished drafting the email to the people at Atrium and the Pearl and sent it out. My process for drafting this email was to first write notes about what needed to be said, then make a rough draft, then run it through Gemini to ensure that everything sounded professional and concise, while still getting the point across. 
