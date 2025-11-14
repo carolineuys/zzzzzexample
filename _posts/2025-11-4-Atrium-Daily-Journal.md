@@ -14,9 +14,25 @@ Today we had our first meeting with the rest of the people that will be helping 
 
 11/03
 Since my job is to manage correspondence between Atrium/ the Pearl and CLS, I drafted an email today to achieve these goals: 
-Update of where we are
-Tell them about how we're going to have more students for the spring
-Underclassmen are getting involved to help us increase our capabilities of improving things
-How can we schedule something in the future - are saturdays possible
-How can we start exploring what other internships and opportunities are available with Pearl
+1. Update of where we are
+2. Tell them about how we're going to have more students for the spring
+3. Underclassmen are getting involved to help us increase our capabilities of improving things
+4. How can we schedule something in the future - are saturdays possible
+5. How can we start exploring what other internships and opportunities are available with Pearl
 In the email I described our progress with the donning tubes and quad sticks as well as described the benefits of having a group of underclassmen work on the project. I also asked about times that we could go in to meet with them in the future. Lastly, I asked about the future opportunities we may receive from Atrium and the Pearl through internships or shadowing experiences.
+
+11/05
+Scarlett and I assembled the parts of the mount that we had previously printed out and had to reprint. While assembling, we realized that some of the parts were not working/fitting into the rest of the pieces so we are reprinting just those parts that weren’t working and will assemble them when they are ready.
+This is how far we got today in our assembly of the mount:
+C:\Users\engineering\Documents\GitHub\zzzzzexample\assets\images\IMG_2385.jpg
+C:\Users\engineering\Documents\GitHub\zzzzzexample\assets\images\IMG_2387.jpg
+C:\Users\engineering\Documents\GitHub\zzzzzexample\assets\images\IMG_2388.jpg
+C:\Users\engineering\Documents\GitHub\zzzzzexample\assets\images\IMG_2389.jpg
+There were also a few pieces that we did not end up using because the print had not finished so the pieces were incomplete:
+C:\Users\engineering\Documents\GitHub\zzzzzexample\assets\images\IMG_2390.jpg
+
+11/07
+I finished drafting the email to the people at Atrium and the Pearl and sent it out. My process for drafting this email was to first write notes about what needed to be said, then make a rough draft, then run it through Gemini to ensure that everything sounded professional and concise, while still getting the point across. 
+
+11/11
+We had our first check-in meeting today with Ms. Heather over zoom to discuss our progress and go over any modifications they would want for our designs that we have made/found. We were able to send over the designs for the quadsticks because those did not need any changes, but we needed to figure out a way for the donning tubes to still hold on to the compression socks because with the handles, the socks can not be pulled all the way over the edge. To combat this problem, we just added a ledge around the outside of the donning tube so that the sock could hook into that spot and the design could still have the handles to ensure that it was still accessible for patients with less mobility. Scarlett and I showed our progress with the video game mounts and determined with Ms. Heather that the joints we were using were working well, but we needed to explore other attachment and clamp options so that the mounts could be adaptable to tables, wheelchairs, and other kinds of things it may need to hold such as a cellphone. To help us see how we can improve the current modular hose mounts that they are using right now, Atrium is going to give us a couple feet to experiment with as we try to solve their stability problem. 
